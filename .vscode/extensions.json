@@ -1,5 +1,6 @@
 {
     "recommendations": [
-        "nodesource.vscode-for-node-js-development-pack"
+        "nodesource.vscode-for-node-js-development-pack",
+        "wscats.cors-browser"
     ]
 }

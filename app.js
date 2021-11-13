@@ -1,6 +1,9 @@
-for (var i = 0; i < 100; i++) {
-    ctx.beginPath();
-    ctx.fillStyle = 'rgba(255,0,0,0.5)';
-    ctx.arc(random(WIDTH), random(HEIGHT), random(50), 0, 2 * Math.PI);
-    ctx.fill();
-  }
+const requestURL = 'https://jsonplaceholder.typicode.com/users'
+const xhr = new XMLHttpRequest()
+
+xhr.open ('get', requestURL)
+xhr.onload = () => {
+  console.log(xhr.response)
+}
+
+// JSON.parse(xhr.response)
